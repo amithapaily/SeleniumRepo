@@ -22,11 +22,11 @@ public class Base
 		//driver =new SafariDriver();
 		//driver=new FirefoxDriver();
 		driver.get("https://selenium.qabible.in");//to open the url
-		driver.manage().window().maximize();//to maximize the browser window
+		driver.manage().window().maximize();//to maximize the browser window.
 	}
 	public void closeBrowser()
 	{
-		//driver.close();// to close current tab only
+		//driver.close();// to close current tab only.
 		driver.quit();//to close current browser.	
 	}
 	
