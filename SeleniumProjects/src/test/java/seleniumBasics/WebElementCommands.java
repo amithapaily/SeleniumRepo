@@ -13,12 +13,20 @@ public class WebElementCommands extends Base
 		 we.verifyWebElementCommands();
 	   //we.closeBrowser();
 	}
+	
 	public void verifyWebElementCommands()
 	{
 		driver.navigate().to("https://selenium.qabible.in/simple-form-demo.php");
 		
 		WebElement messageTextField= driver.findElement(By.id("single-input-field"));
 		messageTextField.sendKeys("Hello World!!!");
+		WebElement showMessageButton=driver.findElement(By.id("button-one"));
+		showMessageButton.click();
+		WebElement message=driver.findElement(By.id("message-one"));
+		System.out.println(message.getText());
+		System.out.println(message.getTagName());
+		System.out.println(message.getCssValue("background-color"));
+		messageTextField.clear();
 	}
 
 }
