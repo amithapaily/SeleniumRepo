@@ -44,7 +44,9 @@ public class DropdownHandling extends Base
 	{
 		driver.navigate().to("https://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
 		WebElement radioButton=driver.findElement(By.xpath("//input[@value='yellow']"));
+		System.out.println(radioButton.isSelected());
 		radioButton.click();
+		System.out.println(radioButton.isSelected());
 	}
 	
 

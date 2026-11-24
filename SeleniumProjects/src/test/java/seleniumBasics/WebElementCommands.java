@@ -21,6 +21,8 @@ public class WebElementCommands extends Base
 		WebElement messageTextField= driver.findElement(By.id("single-input-field"));
 		messageTextField.sendKeys("Hello World!!!");
 		WebElement showMessageButton=driver.findElement(By.id("button-one"));
+		System.out.println(showMessageButton.isDisplayed());
+		System.out.println(showMessageButton.isEnabled());
 		showMessageButton.click();
 		WebElement message=driver.findElement(By.id("message-one"));
 		System.out.println(message.getText());
